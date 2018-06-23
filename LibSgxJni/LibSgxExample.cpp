@@ -36,6 +36,8 @@ JNIEXPORT jint JNICALL Java_LibSgxJava_SgxFunction_jni_1initialize_1enclave
     sgx_launch_token_t token = {0};
     sgx_status_t ret = SGX_ERROR_UNEXPECTED;
     int updated = 0;
+
+    printf("Final Intel SGX monotonic Counter v:2.0.1\n");
     /* Step 1: try to retrieve the launch token saved by last transaction
      *         if there is no token, then create a new one.
      */
