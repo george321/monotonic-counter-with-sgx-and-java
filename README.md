@@ -16,7 +16,7 @@ Hardware
 make clean &&make SGX_PRERELEASE=1 SGX_DEBUG=0
 java JavaApp
 ```
-
+## Signing Enclave with RSA Key
 ## make cert file:
 ```
 openssl genrsa -aes128 -out Enclave_private.pem -3 3072
